@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=devicewidth, initial-scale=1.0">
     <script src = "CheckPalJava.js"></script>
+    <link rel="stylesheet" href="pal.css">
 
     
     <title>Palindrome</title>
 </head>
 <body>
+    <!-- Header for the page -->
     <h1> Enter string to check for palindrome.</h1>
     <form id = "palInput " onsubmit = "return false">
-        
+        <!-- Makes a box for the user to type in-->
         Enter a string to check: <input type = "text" id = "initString"/>
+        <!-- Makes a submit button-->
         <input type = "submit" onclick = "checkPal();"/>
     </form>
-
-    <p id = "results">
-        Results: 
+    
+    <p> 
+        <!-- Shows the results of whether the word is a palindrome or not-->
+        Results: <results id = "results"> Results go here! </results>
     </p>
 </body>
 </html>	
